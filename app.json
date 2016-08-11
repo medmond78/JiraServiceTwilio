@@ -1,0 +1,14 @@
+{
+  "name": "Twilio Call Monitoring for JIRA",
+  "description": "A deployable Heroku app which logs inbound calls to JIRA",
+  "repository": "https://github.com/medmond78/TwilioMonitor.git",
+  "env": {
+    "TOKEN": {
+            "description": "Base64-encoded Jira Credentials",
+            "generator": "secret"
+    },
+    "URL": {
+            "description": "The URL for your JIRA instance",
+            "value": "example.atlassian.net"
+    }
+}

@@ -1,0 +1,23 @@
+{
+  "name": "jiratwillio",
+  "version": "0.1.0",
+  "description": "Jira to Twilio Connector",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/medmond78/JiraServiceTwilio.git"
+  },
+  "keywords": [
+    "twilio",
+    "jira"
+  ],
+  "author": "MEP",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/medmond78/JiraServiceTwilio/issues"
+  },
+  "homepage": "https://github.com/medmond78/JiraServiceTwilio#readme"
+}
