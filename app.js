@@ -8,14 +8,6 @@ const request = require('request');
 
 var port = process.env.PORT || 8080; // set our port
 
-
-// Run server to listen on port assigned by Heroku.
-const server = app.listen(port, () =  > {
-			console.log('listening on *:' + port);
-			console.log('Tokenb is :' + process.env.TOKEN);
-			console.log('URL is' + process.env.URL + '/rest/servicedeskapi/request');
-		});
-
 app.use(bodyParser.urlencoded({
 		extended : false
 	}));
@@ -68,3 +60,7 @@ app.post('/voice', (req, res) =  > {
 		// Send the TwiML as the response.
 		res.send(twiml.toString());
 	});
+
+	
+app.listen(port);
+console.log('Magic happens on port ' + port);
