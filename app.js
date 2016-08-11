@@ -13,6 +13,8 @@ var port = process.env.PORT || 8080; // set our port
 // Run server to listen on port assigned by Heroku.
 const server = app.listen(port, () => {
   console.log('listening on *:' + port);
+  console.log('Tokenb is :' + process.env.TOKEN);
+  console.log('URL is' + process.env.URL +'/rest/servicedeskapi/request');
 });
 
 
