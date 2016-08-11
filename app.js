@@ -30,7 +30,7 @@ app.post('/events', (req, res) => {
  
 
 	var options = { method: 'POST',
-		  url: process.env.URL +'/rest/servicedeskapi/request',
+		  url: process.env.URL,
 		  headers: 
 		   { authorization: 'Basic'+ process.env.TOKEN },
 		  body: 
