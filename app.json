@@ -11,4 +11,5 @@
             "description": "The URL for your JIRA instance",
             "value": "example.atlassian.net"
     }
+    }
 }
