@@ -50,3 +50,15 @@ app.post('/events', (req, res) => {
 console.log(to, fromNumber, callStatus, callSid);
   res.send('Event received');
 });
+
+
+app.post('/voice', (req, res) => {
+  // Generate a TwiML response
+  let twiml = new twilio.TwimlResponse();
+  // Talk in a robot voice over the phone.
+  twiml.say('Call progress events are rad');
+  // Set the response type as XML.
+  res.header('Content-Type', 'text/xml');
+  // Send the TwiML as the response.
+  res.send(twiml.toString());
+});
