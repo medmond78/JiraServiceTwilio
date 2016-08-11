@@ -1,5 +1,5 @@
 {
-  "name": "Twilio Call Monitoring for JIRA",
+  "name": "Call Monitoring for JIRA",
   "description": "A deployable Heroku app which logs inbound calls to JIRA",
   "repository": "https://github.com/medmond78/TwilioMonitor.git",
   "env": {
