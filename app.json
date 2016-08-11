@@ -5,7 +5,7 @@
   "env": {
     "TOKEN": {
             "description": "Base64-encoded Jira Credentials",
-            "generator": "secret"
+            "value": "e.g. bWVkbW9uZDk54gYWlsLmNvbTp5P1h4a0JOQT1I"
     },
     "URL": {
             "description": "The URL for your JIRA instance",
