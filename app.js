@@ -9,6 +9,8 @@ const request = require('request');
 var port = process.env.PORT || 8080; // set our port
 
 app.use(bodyParser.urlencoded({ extended: false } ));
+console.log(process.env.URL);
+console.log(process.env.TOKEN);
 
 // Set Express routes.
 app.post('/events', (req, res) => {
@@ -24,7 +26,7 @@ app.post('/events', (req, res) => {
 				'cache-control' : 'no-cache',
 				'content-type' : 'application/json',
 				//authorization : 'Basic bWVkbW9uZDk1QGdtYWlsLmNvbTp5N1g4a0JOQT1I'
-				authorization : process.env.TOKEN
+				authorization : process.env.TOKEN 
 			},
 			body :
 			{
