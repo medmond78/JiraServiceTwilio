@@ -18,7 +18,7 @@ app.post('/events', (req, res) => {
 		let callSid = req.body.CallSid;
 		var options = {
 			method : 'POST',
-			url : '\'' + process.env.URL + '\'', //'https://medmond78.atlassian.net/rest/servicedeskapi/request',
+			url : ' process.env.URL ', //'https://medmond78.atlassian.net/rest/servicedeskapi/request',
 			headers : {
 				'postman-token' : '640a12a7-13e5-8017-c9bd-c54ac79f7133',
 				'cache-control' : 'no-cache',
