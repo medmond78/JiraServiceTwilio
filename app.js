@@ -13,7 +13,7 @@ app.use(bodyParser.urlencoded({
 	}));
 
 // Set Express routes.
-app.post('/events', (req, res) =  > {
+app.post('/events', (req, res) {
 		let to = req.body.To;
 		let fromNumber = req.body.From;
 		let callStatus = req.body.CallStatus;
@@ -50,7 +50,7 @@ app.post('/events', (req, res) =  > {
 		res.send('Event received');
 	});
 
-app.post('/voice', (req, res) =  > {
+app.post('/voice', (req, res) {
 		// Generate a TwiML response
 		let twiml = new twilio.TwimlResponse();
 		// Talk in a robot voice over the phone.
