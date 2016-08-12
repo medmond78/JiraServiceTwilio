@@ -24,7 +24,7 @@ app.post('/events', (req, res) => {
 				'cache-control' : 'no-cache',
 				'content-type' : 'application/json',
 				//authorization : 'Basic bWVkbW9uZDk1QGdtYWlsLmNvbTp5N1g4a0JOQT1I'
-				authorization : 'Basic' + process.env.TOKEN + '\''
+				authorization : "Basic" + process.env.TOKEN + ""'""
 			},
 			body :
 			{
