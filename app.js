@@ -19,15 +19,14 @@ app.post('/events', (req, res) => {
         let callStatus = req.body.CallStatus;
         let callSid = req.body.CallSid;
 
-        url: 'https://medmond78.atlassian.net/rest/servicedeskapi/request',
-        headers:
-        {
-            'postman-token' : 'b54b3484-c975-af14-6b0d-b04516542f9e',
-            'cache-control' : 'no-cache',
-            'content-type' : 'application/json',
-            authorization : 'Basic bWVkbW9uZDk1QGdtYWlsLmNvbTp5N1g4a0JOQT1I'
-        },
-        body:
+ url: 'https://medmond78.atlassian.net/rest/servicedeskapi/request',
+  headers: 
+   { 'postman-token': '640a12a7-13e5-8017-c9bd-c54ac79f7133',
+     'cache-control': 'no-cache',
+     'content-type': 'application/json',
+     authorization: 'Basic bWVkbW9uZDk1QGdtYWlsLmNvbTp5N1g4a0JOQT1I' },
+  body: 
+        
         {
             serviceDeskId : '1',
             requestTypeId : '1',
